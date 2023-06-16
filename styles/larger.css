@@ -8,8 +8,8 @@
     }
 
     header {
-        background-color: #B4B8AB;
-        color: #153243;
+        background-color: #153243;
+        color: #B4B8AB;
         font-family: "Acme", 'Courier New', Courier, monospace;
         display: grid;
         grid-template-columns: 20% 200px auto 20%;
@@ -30,25 +30,60 @@
         font-size: 55px;
     }
 
+    #mode {
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        grid-column: 4/5;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
     nav {
-        background-color: #153243;
+        background-color: #284b63;
         font-family: "Sigmar", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         padding-top: 10px;
         padding-bottom: 10px;
         justify-content: space-around;
+    }
+
+    .navigation {
         display: flex;
+        flex-direction: row;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    nav a {
+        color: #B4B8AB;
+        display: flex;
+
+    }
+
+    #menu::before {
+        color: #B4B8AB;
+        content: none;
+    }
+
+    button {
+        display: none;
     }
 
     a {
-        color: #eef0eb;
+        color: #153243;
         font-size: 32px;
         text-decoration: none;
+        display: flex;
     }
 
     nav a:hover {
         background-color: #B4B8AB;
         color: #153243;
     }
+
 
     main {
         display: grid;
@@ -86,7 +121,7 @@
         font-family: "IBM Plex Sans Condensed", 'Times New Roman', Times, serif;
         font-size: 30px;
         padding-left: 10px;
-        background-color: #6f7364;
+        background-color: #153243;
         margin-top: auto;
         border-radius: 5px;
         padding-top: 10px;
@@ -103,7 +138,9 @@
     p {
         padding-left: 20px;
         padding-top: 20px;
-        font-family: "IBM Plex Sans Condensed", 'Times New Roman', Times, serif;
+        font-family: "Acme", 'Times New Roman', Times, serif;
         font-size: 30px;
     }
+
+
 }

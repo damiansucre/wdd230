@@ -7,8 +7,8 @@ body {
 }
 
 header {
-    background-color: #B4B8AB;
-    color: #153243;
+    background-color: #153243;
+    color: #B4B8AB;
     font-family: "Acme", 'Courier New', Courier, monospace;
     display: grid;
     grid-template-columns: 10% 200px auto 10%;
@@ -29,8 +29,17 @@ h1 {
     font-size: 30px;
 }
 
+#mode {
+    position: absolute;
+    left: 1rem;
+    right: 1rem;
+    grid-column: 4/5;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 nav {
-    background-color: #153243;
+    background-color: #284b63;
     font-family: "Sigmar", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -39,15 +48,69 @@ nav {
 }
 
 a {
-    color: #eef0eb;
+    color: #153243;
     font-size: 32px;
     text-decoration: none;
     display: block;
 }
 
-nav a:hover {
+nav a {
+    display: none;
+}
+
+.navigation li a:hover {
     background-color: #B4B8AB;
     color: #153243;
+}
+
+#menu {
+    box-sizing: border-box;
+    color: #153243;
+    font-size: 1.5rem;
+    background-color: #B4B8AB;
+    font-family: "Acme", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid rgba(0, 0, 0, .3);
+    padding: 3px 7px 6px;
+    position: absolute;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    background-color: #284b63;
+    font-family: "Sigmar", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.navigation li {
+    display: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❎";
+}
+
+.navigation li a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #B4B8AB;
+}
+
+.open li {
+    display: block;
+}
+
+.open li a {
+    display: block;
 }
 
 main {
@@ -85,7 +148,7 @@ h3 {
     font-family: "IBM Plex Sans Condensed", 'Times New Roman', Times, serif;
     font-size: 30px;
     padding-left: 10px;
-    background-color: #6f7364;
+    background-color: #153243;
     margin-top: auto;
     border-radius: 5px;
     padding-top: 10px;
@@ -102,6 +165,7 @@ footer {
 p {
     padding-left: 20px;
     padding-top: 20px;
-    font-family: "IBM Plex Sans Condensed", 'Times New Roman', Times, serif;
+    font-family: "Acme", 'Times New Roman', Times, serif;
     font-size: 20px;
+    color: #153243;
 }
