@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy Loading</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+</head>
+<body>
+    <header>
+        <h1>Lazy Loading</h1>
+    </header>
+    <main>
+        <picture>
+            <img src="images/image01.jpg" alt="image 1" width="400" height="600" loading="lazy">
+        </picture>
+        <picture>
+            <img src="images/image02.jpg" alt="image 2" width="400" height="600" loading="lazy">
+        </picture>
+        <picture>
+            <img src="images/image03.jpg" alt="image 3" width="400" height="600" loading="lazy">
+        </picture>
+        <picture>
+            <img src="images/image04.jpg" alt="image 4" width="400" height="600" loading="lazy">
+        </picture>
+        <picture>
+            <img src="images/image05.jpg" alt="image 5" width="400" height="600" loading="lazy">
+        </picture>
+        <picture>
+            <img src="images/image06.jpg" alt="image 6" width="400" height="600" loading="lazy">
+        </picture>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Angel Damian Escalante | Argentina </p>
+        <p id="lastModified">
+            Last Modification:<span id="current-date"></span>
+        </p>
+        <script src="scripts/lazyload.js"></script>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+h1 {
+    text-align: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+picture {
+    justify-self: center;
+}
+
+img {
+    width: 400px;
+    height: 600px;
+    justify-self: center;
+    animation: fade 5s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
