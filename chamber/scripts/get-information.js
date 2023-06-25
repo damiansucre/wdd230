@@ -10,3 +10,20 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+
+
+const msToDays = 84600000;
+
+const theDateToday = new Date();
+
+const todayElement = document.querySelector(".msg");
+
+// processing
+const msg = Date.now();
+
+
+if (theDateToday.getMonth() == 11 && theDateToday.getDate() > 25) {
+	
+}
+

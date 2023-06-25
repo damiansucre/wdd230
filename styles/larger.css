@@ -189,11 +189,15 @@
         height: 600px;
     }
 
+    /*Discover Page*/
     .sidebar {
         display: grid;
         grid-template-columns: 35% 1fr 60%;
     }
 
+    .sidebar-images {
+        grid-column: 2;
+    }
 
 
 }
