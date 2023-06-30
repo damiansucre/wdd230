@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="WDD 230 - Web Frontend Development - Angel Damian Escalante - Home Page Build">
+    <meta name="author" content="Damian Escalante">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damian Escalante - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/picture.webp" alt="Profile image">
+        <h1>Angel Damian Escalante</h1>
+        <div id="mode">
+            ☑️
+        </div>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main class="principal">
+        <form action="record.html" method="get">
+            <div id="formmessage"></div>
+            <fieldset>
+                <label class="top">Username* <input type="text" id="user" name="userName" required></label>
+                <label class="top" for="password">Password* <input type="password" id="password" name="password" required pattern="[A-Za-z]{8}" placeholder="Eight alpha-numeric chraceters long"></label>
+                <label class="top" for="password2">Confirm Password* <input type="password" id="password2" name="password2"></label>
+                <label class="top">Email* <input type="email" id="mail" name="email" required pattern="[a-z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address"></label>
+                <label class="top" for="r">Page Rating</label>
+                <div id="rangevalue">1</div>
+                <input class="top" type="range" id="r" name="r" min="1" max="10" value="1" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+
+            </fieldset>
+            <input type="submit" value="Enter my data" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> | Angel Damian Escalante | Argentina </p>
+        <p id="lastModified">
+            Last Modification:<span id="current-date"></span>
+        </p>
+        <script src="scripts/getDates.js"></script>
+    </footer>
+</body>
+</html>
