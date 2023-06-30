@@ -175,9 +175,9 @@ h2 {
     grid-row: 3/4;
     grid-column: 2/3;
     border-radius: 5px;
-    background-color: #B4B8AB;
+    background-color: hsl(78, 8%, 70%);
     box-shadow: 5px 5px 10px #6f7364;
-    height: 600px;
+    height: 800px;
     margin-bottom: 30px;
     margin-left: 20px;
     margin-right: 20px;
