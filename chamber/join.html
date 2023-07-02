@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Matanza Chamber of Commerce</title>
+    <meta name="description" content="La Matanza chamber of Commerce is the main web page to find information about the town">
+    <meta name="author" content="Damian Escalante">
+    <meta property="og:title" content="La Matanza Chamber of Commerce">
+    <meta property="og:type" content="website"/>
+    <meta property="og:description" content="information about our Chamber of Commerce">
+    <meta property="og:image" content="image/Campanopolis.jpg">
+    <link rel="favicon" href="chamber/favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <img id="header-logo" src="images/Logo.gif" alt="Logo La Matanza">
+        <h1>La Matanza Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="join.html">Join Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 id="join">Join Us</h1>
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required id="fname"></label>
+                <label class="top">Last name* <input type="text" name="lname" required id="lname"></label>
+                <label class="top">Title or Position <input type="text" name="title" id="title" pattern="[a-z A-Z]{7}"></label>
+                <label class="top">Email Address* <input type="email" name="email" required id="phone" placeholder="damian@gmail.com"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"></label>
+                <label class="top">Mobile Phone Number* <input type="tel" name="phone" required id="phone"></label>
+                <label class="top">business/organization's name* <input type="text" name="businessName" id="businessName" required></label>
+                <label class="top">Date of Birth <input type="date" name="birth" id="birth"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <div>Level</div>
+                <div id="membership">
+                <label class="sbs"><input type="radio" name="level" value="nonProfit">
+                    NP Membership is for non profit organizations and there is no fee</label>
+                <label class="sbs"><input type="radio" name="level" value="bronze">Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="level" value="silver">Silver Membership</label>
+                <label class="sbs"><input type="radio" name="level" value="gold">Gold Membership</label>
+                <p id="result"></p>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>business/organization</legend>
+                <label class="top">Description <input type="text" name="description" id="description"></label>
+            </fieldset>
+            <input type="submit" value="Create your account" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <img id="logo-footer" src="images/Logo.gif" alt="Logo">
+        <h2>La Matanza Chamber of Commerce</h2>
+        <p>&copy; <span id="current-year"></span> | Angel Damian Escalante | WDD 230 Project | Last Modification: <span id="current-date"></span> </p>
+        <script src="scripts/get-information.js"></script>
+    </footer>
+</body>
+</html>

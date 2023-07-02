@@ -357,4 +357,90 @@
         font-weight: bold;
         color: #0d1b2a;
     }
+
+    /*Join Us Web Page*/
+
+    #join {
+        text-align: center;
+    }
+
+    form fieldset {
+        color: #B4B8AB;
+        margin: 2rem;
+        border: 1px solid #B4B8AB;
+        border-radius: 10px;
+        padding: .75rem 2%;
+        font-size: 1.75rem;
+        font-family: "Geologica", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    form legend {
+        color: #B4B8AB;
+        padding: 0 .5rem;
+    }
+
+    form label.top,
+    form div {
+        display: block;
+        padding-top: 1rem;
+        color: #B4B8AB;
+        font-size: 1.5rem;
+        font-family: "Geologica", Arial, Helvetica, sans-serif;
+    }
+
+    form label.top input,
+    form label.top select {
+        display: block;
+        font-size: 1.5rem;
+        border: solid 1px #B4B8AB;
+        border-radius: 4px;
+        padding: .50rem;
+        color: #0d1b2a;
+        width: 100%;
+        max-width: 20rem;
+        background-color: rgb(218, 216, 216);
+    }
+
+    form label.sbs {
+        grid-column: 1/2;
+        display: block;
+        padding: .75rem 0;
+        font-size: 1.5rem;
+    }
+
+    form #membership {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form #result {
+        grid-column: 2/3;
+    }
+
+    form input.submitBtn {
+        border: none;
+        background-color: #B4B8AB;
+        color: #0d1b2a;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 0 0 2rem 3%;
+        font-size: 1.5rem;
+        width: 96%;
+        max-width: 20rem;
+    }
+
+    form label.top input:required {
+        border-left: red solid 6px;
+    }
+
+    form label.top input:required:valid {
+        border-left: green solid 6px;
+    }
+
+    /*Thanks web page*/
+    #thanksMsg {
+        text-align: center;
+        color: #B4B8AB;
+        font-size: 4rem;
+    }
 }

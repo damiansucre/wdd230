@@ -33,7 +33,7 @@ if (theDateToday.getMonth() == 11 && theDateToday.getDate() > 25) {
 	
 } */
 
-const visitsDisplay = document.querySelector(".visits");
+/* const visitsDisplay = document.querySelector(".visits");
 
 const theDateToday = new Date();
 
@@ -48,4 +48,28 @@ if (numVisits !== 0) {
 }
 numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
-localStorage.setItem('dayVisited', theDateToday);
+localStorage.setItem('dayVisited', theDateToday); */
+
+
+/*script for form*/
+
+let radioBtns = document.querySelectorAll("input[name='level']");
+let result = document.getElementById("result");
+let findSelected = () =>{
+	let selected =document.querySelector("input[name='level']:checked").value;
+	if (selected == "bronze"){
+		result.textContent=`15 USD `;	
+	}
+	else if (selected =="silver"){
+		result.textContent=`30 USD`;
+	}
+	else if (selected =="gold"){
+		result.textContent=`50 USD, 2x1 GYMPASS, Freepass to all events`;
+	}
+	else if (selected =="nonProfit"){
+		result.textContent=`Free`;
+	}
+}
+radioBtns.forEach(radioBtns =>{
+	radioBtns.addEventListener("change", findSelected);
+});
