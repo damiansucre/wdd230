@@ -58,16 +58,16 @@ let result = document.getElementById("result");
 let findSelected = () =>{
 	let selected =document.querySelector("input[name='level']:checked").value;
 	if (selected == "bronze"){
-		result.textContent=`15 USD `;	
+		result.textContent=`15 USD 5 Freepass per year for events`;	
 	}
 	else if (selected =="silver"){
-		result.textContent=`30 USD`;
+		result.textContent=`30 USD, 10 Freepass per year for events`;
 	}
 	else if (selected =="gold"){
 		result.textContent=`50 USD, 2x1 GYMPASS, Freepass to all events`;
 	}
 	else if (selected =="nonProfit"){
-		result.textContent=`Free`;
+		result.textContent=`Free, All the information about our events`;
 	}
 }
 radioBtns.forEach(radioBtns =>{

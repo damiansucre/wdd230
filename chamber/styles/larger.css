@@ -401,6 +401,17 @@
         background-color: rgb(218, 216, 216);
     }
 
+    form label.bottom input {
+        display: block;
+        font-size: 1.5rem;
+        border: solid 1px #B4B8AB;
+        border-radius: 4px;
+        padding: .50rem;
+        color: #0d1b2a;
+        width: 100%;
+        background-color: rgb(218, 216, 216);
+    }
+
     form label.sbs {
         grid-column: 1/2;
         display: block;
