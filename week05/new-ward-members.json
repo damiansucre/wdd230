@@ -1,0 +1,33 @@
+{
+    "familyName" : "Escalante",
+    "familyMoved" : ["2007","05","11"],
+    "peopleNumber" : 5,
+    "visitedB" : true,
+    "members" : [
+      {
+        "name" : "Damian",
+        "gender" : "m",
+        "birthdate":["1983","04","21"]
+      },
+      {
+        "name" : "Gabriela",
+        "gender" : "f",
+        "birthdate":["1986","05","03"]
+      },
+      {
+        "name" : "Avril",
+        "gender" : "f",
+        "birthdate":["2010","09","03"]
+      },
+      {
+        "name" : "Julieta",
+        "gender" : "f",
+        "birthdate":["2017","11","06"]
+      },
+      {
+        "name" : "Felipe",
+        "gender" : "m",
+        "birthdate":["2021","02","19"]
+      }
+    ]
+  }

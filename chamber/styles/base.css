@@ -414,6 +414,7 @@ form #membership {
 
 form #result {
     grid-column: 2/3;
+    grid-row: 1/4;
 }
 
 form input.submitBtn {
