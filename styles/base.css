@@ -216,6 +216,14 @@ h3 {
     padding-bottom: 10px;
 }
 
+.info {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    margin-top: auto;
+}
+
+
+
 iframe {
     border-radius: 5px;
     width: 100%;

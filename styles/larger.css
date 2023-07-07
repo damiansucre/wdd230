@@ -150,6 +150,7 @@
         box-shadow: 5px 5px 10px #6f7364;
         height: 600px;
         margin-bottom: 30px;
+        text-align: center;
     }
 
     h3 {
@@ -157,10 +158,44 @@
         font-size: 30px;
         padding-left: 10px;
         background-color: #153243;
-        margin-top: auto;
         border-radius: 5px;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    .temp {
+        display: grid;
+        grid-template-columns: 20% 1fr 20%;
+    }
+
+    figure {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: left;
+    }
+
+    #temp {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-size: 1.5rem;
+        align-self: center;
+    }
+
+    #weather-icon {
+        width: 100%;
+        max-width: 10%;
+        justify-self: left;
+        text-align: left;
+    }
+
+    figcaption {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        font-family: "Acme", 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+        text-align: right;
+        align-self: center;
+        color: #153243;
     }
 
     footer {

@@ -1,0 +1,86 @@
+{
+    "weeks":[
+        {
+            "week":"Week 1",
+            "links": [
+                {
+                    "url":"week01/holygrail.html",
+                    "title":"HG Layout"
+                },
+                {
+                    "url":"week01/media-query.html",
+                    "title":"mQueries"
+                },
+                {
+                    "url":"week01/chamber-site-plan.html",
+                    "title":"Site Plan"
+                }
+            ],
+            "week2":"Week 2",
+            "links2": [
+                {
+                    "url":"week02/design.html",
+                    "title":"Web Design Principle"
+                },
+                {
+                    "url":"https://codepen.io/damiansucre/pen/xxQwOEz",
+                    "title":"Responsive Hamburger Menu"
+                }
+
+            ],
+            "week3":"Week 3",
+            "links3": [
+                {
+                    "url":"week03/images/landscape.webp",
+                    "title":"WebP Image File Format"
+                },
+                {
+                    "url":"week03/lazyload.html",
+                    "title":"Lazy Load"
+                },
+                {
+                    "url":"week03/reponsive-images.html",
+                    "title":"Responsive Image"
+                }
+            ],
+            "week4":"Week 4",
+            "links4": [
+                {
+                    "url":"https://codepen.io/damiansucre/pen/wvQgrPG",
+                    "title":"CSS Pseudo-Classes"
+                },
+                {
+                    "url":"week04/images/CSS-combinators-exercise.jpg",
+                    "title":"CSS Combinators"
+                },
+                {
+                    "url":"week04/tablebuild.html",
+                    "title":"HTML Tables for Data Presentation"
+                },
+                {
+                    "url":"week04/index.html",
+                    "title":"HTML Forms"
+                }
+            ],
+            "week5":"Week 5",
+            "links5": [
+                {
+                    "url":"https://codepen.io/damiansucre/pen/yLQoyqQ",
+                    "title":"Pseudo Elements"
+                },
+                {
+                    "url":"week05/new-ward-members.json",
+                    "title":"JSON data"
+                },
+                {
+                    "url":"week05/prophets.html",
+                    "title":"The Fetch API"
+                },
+                {
+                    "url":"week05/weather.html",
+                    "title":"Consuming a Weather API"
+                }
+            ]
+        }
+    ]
+}
