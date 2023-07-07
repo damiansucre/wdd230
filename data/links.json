@@ -15,9 +15,11 @@
                     "url":"week01/chamber-site-plan.html",
                     "title":"Site Plan"
                 }
-            ],
-            "week2":"Week 2",
-            "links2": [
+            ]
+        },
+        {
+            "week":"Week 2",
+            "links": [
                 {
                     "url":"week02/design.html",
                     "title":"Web Design Principle"
@@ -27,9 +29,11 @@
                     "title":"Responsive Hamburger Menu"
                 }
 
-            ],
-            "week3":"Week 3",
-            "links3": [
+            ]
+        },
+        {
+            "week":"Week 3",
+            "links": [
                 {
                     "url":"week03/images/landscape.webp",
                     "title":"WebP Image File Format"
@@ -42,9 +46,11 @@
                     "url":"week03/reponsive-images.html",
                     "title":"Responsive Image"
                 }
-            ],
-            "week4":"Week 4",
-            "links4": [
+            ]
+        },
+        {
+            "week":"Week 4",
+            "links": [
                 {
                     "url":"https://codepen.io/damiansucre/pen/wvQgrPG",
                     "title":"CSS Pseudo-Classes"
@@ -61,9 +67,11 @@
                     "url":"week04/index.html",
                     "title":"HTML Forms"
                 }
-            ],
-            "week5":"Week 5",
-            "links5": [
+            ]
+        },
+        {
+            "week":"Week 5",
+            "links": [
                 {
                     "url":"https://codepen.io/damiansucre/pen/yLQoyqQ",
                     "title":"Pseudo Elements"

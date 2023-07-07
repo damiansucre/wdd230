@@ -76,7 +76,7 @@ function checkSame() {
 const rangevalue = document.getElementById("rangevalue");
 const range = document.getElementById("r");
 
-console.log(rangevalue)
+//console.log(rangevalue)
 // RANGE event listener
 //range.addEventListener('change', displayRatingValue);
 //range.addEventListener('input', displayRatingValue);
@@ -98,7 +98,7 @@ async function apiFetch(){
         const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            //console.log(data);
             displayResults(data);
         }else{
             throw error(await response.text());
@@ -113,7 +113,7 @@ function displayResults(data){
     currentTemp.innerHTML = `${data.main.temp} &deg;F`;
     const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
-    console.log(iconsrc);
+    //console.log(iconsrc);
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('src', iconsrc);
     captionDesc.textContent = `${desc}`;
