@@ -1,4 +1,5 @@
 const exercisesLink = document.querySelector('#exercises-link');
+const cards = document.querySelector('.card-1');
 const baseURL = "https://damiansucre.github.io/wdd230/";
 
 const linksURL = "https://damiansucre.github.io/wdd230/data/links.json";
@@ -8,8 +9,8 @@ async function getLinks(){
         const response = await fetch(linksURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
-            displayLinks(data);
+            //console.log(data);
+            displayLinks(data.weeks);
         }else{
             throw error(await response.text());
         }
@@ -19,14 +20,23 @@ async function getLinks(){
     }
 }
 
-function displayLinks(data){
-    exercisesLink.innerHTML = `${data.weeks[0].week}`;
-    const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
-    console.log(iconsrc);
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('src', iconsrc);
-    captionDesc.textContent = `${desc}`;
+const displayLinks = (weeks) =>{
+
+    let card= document.createElement('section');
+    
+    weeks.forEach ((contWeek) => {
+        let weekName = document.createElement('h2');
+        weekName.textContent = `${contWeek.week}: `;
+        card.appendChild(weekName);
+        
+        contWeek.links.forEach(function (nameLink) {
+            let linkName = document.createElement('a');
+            linkName.textContent =`|${nameLink.title}`;
+            linkName.setAttribute('href', nameLink.url);
+            card.appendChild(linkName);
+        });
+    });
+    cards.appendChild(card);
 }
 
 getLinks();
