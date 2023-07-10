@@ -1,0 +1,62 @@
+{
+    "companies":[
+        {
+            "name":"San Justo Shopping",
+            "address":"3910 Juan Manuel de Rosas Avenue B1754 San Justo",
+            "phone":"011 4480-2800",
+            "url":"https://www.sanjustoshopping.com.ar/",
+            "image":"https://www.sanjustoshopping.com.ar/images/ANIMACION_LOGO_SJS_v2.gif",                    
+            "membership":"PRO"
+        },
+
+        {
+            "name":"National University of La Matanza",
+            "address":"1903 Florencio Varela B1754 San Justo",
+            "phone":"011 4480-8900",
+            "url":"https://www.unlam.edu.ar/",
+            "image":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAxlBMVEX///8AmEYAmUYAmUMAlkMAm0Ho9e4AmUIAlzfR7d88sm4AmUEAmUAAnEQAlkIAmj8AnUAAlTny+vYAoUr4/fvm9OwAnDvi9Ovv+PMAn0syr2ix28KT0q1ov4rJ6NcAnUkAlC8XqFbZ7eHC5NC23sZ5yJtLt3curWFeuoKX07Cn1rlVsHaAy6AAokan3L9Mt3tkwYyMx6FjuYQbo1hIrW1ZvoVHt3l7yZyK0qyRyqYysWyh2LgUqV2Fxp5svY2aza0AnTFWwoP35Tf4AAAWYUlEQVR4nNVdaXuiwLLOdIPsAoKouCQsihqjTiYmJhpz7v//U1dMTJRe6EYw57wfZp5nBoFqqqtrr5ubauE22rVmGMXz3nC5Wjyrvu+rz4vVctibx4OwWWs3Kn6BSlFT4ul7f+R3dNs2TdFIAfdI/xZN07b1TjLqv09jpfbbr1oA7Xj9+JQEhqZJEADwB4f9v0NJkwwneXpcx+3ffmV2tJvd5Vb2LK0uCFjKshCEumZ59nY5bf4PkNmKXleBLUL8V6MBGKIdrF6j1m+TQEW0UwNd4qfum0pJC9Rd7P42HXjUopXhiXU2xiRDqOseXEX/dbLHHfxVdbH4xzsHEPW398F/1ZecjxMRlkTeJ41Q347nv03WEeG640mXMicKQfI66/C3idtj8DcwS/18J4Bm8D74Zfpa/a1WFX0HGrWg/4vf0VXGnlg+e55DEL2V8ktCR3l3zLKkJw1AdGbKbxA4S7Rr0HegUU9m1yavPQ+s+pXoS1G3gvlVddbBotzjjwFQXFxRrPa22pXpS6EF79eROO4gsKoWoHgIVhBdgcbarGP8Cn0pDGfWrJpARTWuJUFxAIZf7cHR7j0U2IHgiDJohA/rCoVqa2xxvCUA0BBF095D1zU9/dsURaOA+X9+W3FcmRtAUW2mdxAEqFuebN9un5cvvWkcRYM9oije9F6Wz1tDlj1LZ3XiYKCr1Zwb7sSSGFYYakbg3+/WXYXoCW0r8/XuyQ90reD3lKxeBTK1PZNzXwcYZkd9mcYhg5u3HUYfO9WwCwkuIM9K34yNVY6PQqiLHlzMQ54nN2rh5NmULX7nDjBWJZPYckzqAyFM7meK26i1lP1uGy5TD/5itVwO15tuFLaaNOd9NHsK+I1M0SnVbowS6hYE/9T+ejP9O1aD208P/qcL/9N3b98G/mr3uqeUtHma0asv8vqxpCQqj8BuQF9i4Ktq0tF0ggN/f2xATXOC5H64IQn6ZrySOa0VGHTLInB+l7e8ADJsJaEORUvurLoh3hla640cLm8yvNuUQ+CmU6aeBg27M/rAe3xr07HBo/SCzqQMAntO2aYgkPTgCe+YaAzeZJ1dsgJnXQKBuSxaBELdkoMJ9twc9B129wjwLiaxXBY9AzSDXYSjMR5zeBCcCxl1Xh2BewAtWOCERSNm9wKBzkXiplsJi55AgF4wwZ0gk0RnfDS4uyC+EQVXsHahmXxgDPfwkVXCgaDw0d9KruNQg4aK2Uxut2OySVWYFFTgGg6DtXSOT+1F0/cKm+Ps/9B16ZCpkPuO3jZGZU5jyfgZJaeQGt5eUZVtlDpDtO00fWT492M67Xa70+n04+97f+F3JFvMM5Ik5xFzQHYTkenZ4qJAzNh9Ydcu0lwKWd8uJ1GrWWu4pwq222g3W8q0/wZlS6SZ9UBPeuhb1HyZiVONF36TeJJv8H69mqQ76uM6NyitbHZqYFAUz7oXYLwTvRyt/+slZMzy0DFg9DlBU1TfY0bXUCv6WHR0Mm8YnTXKbVHA4t4DHqfvpqWyrJyge8FwwLUF2uFkSzaTgKGiYnHgswgE6HMJ1PZYZ7innjwWstCUme+Qvov0sEHYvTFkYSh9wSNQe1Y+fab/epR+jVorVPYIwxZbrmFrujIJzAoe+ihTzBwGEs13dgKV3DWTPOcQz2sM5uvd4/2T6icpfPXp/nG4npM9iUe0I5WQwAHMBcJvbu8hX6QCi9nh3/RzNiF0xl23pkwWgS17lihBWK8LKer1OtREy5Lt7WqiNOl0DhYElUJzUOaPGQ5/6DOGbdxZzkkI1XXU3W01k+yhB3tTXkr6U6x19P2geCFj3xtaU2Qz5vmKUohDtlMxytE/bp+X94mR768+uL+f1jTWaUwcrO4JHPR46zq5BhUwmHRwN5cfbkXI6mhIbfntpkVe2toM/zh5hfxmkM+o0GD5iO/5cpQP0NwOKRpPV8XqnnIfEf4MjGox5GwMgvJD2FAPxjHxibXhHebNgbFEVmWeK1EFnOJ3jvaI4aznh6DLKsY++kLs42Sb6SMkxg+5x9goT8Xa8JlMHDCcMXF9wxVOzzeXCKP2ckk089w2nerMeiAFQ5Ji5e5wVpKxy35Fd5j3BeAtXdgMyxYzZxBMa05i1SlGjAB5jC5FHonWjkag8q/iTBkoEll1gLOSULOvneQYU1Rh475UnusEtIDk/BtsMUIOVeAGeVq4RtFslNJy0SkQvDHBkmth5Dh4QI6Z2KE/AIjkj7io5KRAoCcETa6poi8AHcSBkKeTiAsSgaFXEUlZaFuC5RxiSNTHiHAKckwDj6QLj7l3YVqbBaG0N5+I5VtY1D3CXmliGNVCrg3/0c80/R5/d0597eAfNYK91TsajVR/Gxi2mesW/f6x/II/GltoYid4QGTThr4VBbyf331n3oVCXbdk+LbcpGkWzVqKZqsVxr3l1pYtjSlshFE7v9YZ+T7wNrsa7j3dU6zPcDcPWXwhhwfqgbrbEFjdHawffYclecRM8Ic/hpXERfaF2wb1CQCbijJj00hF/e01xz8adl8SO99jbq7wSvJURi51EGVzQpen5hBzY5YttLdnmcrK3Nr0Lb8UQ0St3AN2SIIg/Jf1wLQXVLEIdPTWOYtyeI6ortkTH8P+Ni8eb6pYEt0VwgCimr0oRy5aiLrn3udtHWAm2GgtGcq7kyO8zCF2L4YJsjQyotq8UHcVRA6M3KNClGf8iavKyqNLBAOfZ9C9Q95YzfJpgxo6Qg6MvKMCOsticdYBPS8ceFPsz/rIaWD+zV5DN9b1TOlCkx7Q1oNu0ZTV2ppqVMMH7MrV1KyzGG6zF7afqDfenn/0iJbfLHiLSxLkB9TMTYJjpetkd424zF4zfaDc9499vnOfKccXRE8jPrg7GqeaiKviANRdcZdd5saC9hGNM/HrUsrspOTietzGhhbqEbFbsYaoWCLinuiiusEPgHkqp7tku0n/V0Zi/PSBvNzAwPLpJPv6GPcEdYt7p1/mkShJDbWcfOoBJcsYVTtTtEfZX+gIP3epO/zEjRX6JHPAWJRVvaFQXPIOlk8RYQM6WXFao8UBhZNEohgRXMdVQ87Z4qAEVqCP41P3Pqt6mkhU4pV2jDvf0pR43EsEA6cgiVsiiWYf94MoKx2AjFj7CUUV+zn0awjHfwIm5VbfxB4xoOphz30knOEh59aOYgpD9cgaIT6JVMAEmy/DO1G661hHdZzVQyREn0a+8+m63R7XbYJXaAgq4wVwhyTFQnBw0bf2IsNcGAfMP4quYh5NKNQcS6EjMYPL0UTUze+n9XFb/iP7Zjqif/coB4bx/HUR9tyUEE23DESIWfQFYOBUX+QYg29ZqUtzL8HO5zUt3FMFp8SamxPMSJLBQKz4FMPM5cDOvlajT3FnyJ9faY7zX4j9aqqmUbPo+O4yjmcGWdlkohYGZSNan4obblmBXFXN9JSkXVjYpK3sDjoy3g8GlCNRPLjcsB4as4RaFAIeCVxVxyYXIoJERs7oR7LGK92n8qulokopc/5UASikQxGrnYa3GUGCfmpKmmHdT9XqwRb9yuJrZQTe3LwRNo6GOzAQfUt7zF5CXLKjwdVFoxx1tcq2cArB4kdNhxQfGZ1ZQIOPFCvxoJZ9oPsCv+nLQpsUxTNxrsU46+ZEtZ8VWTfVXlNNCjUssIK7PJDku+FjLkYOfe0DuR/Zjabtjeb2ChFF+MO3PLQIBjeQcWbiLvMFJGS7tsjlZ9KifVN7Q7jYLF3lzr40ga0snM8rKypROV8jp92ntnUTqd4CQdX9w0iOL6wNlbWPUIHk7oiKGwiaNy1EsmGldrkgVN7Vn3BsamcuthFRgxGWRwq18GaQvQFmK5cOFS9r8OlM28zFJhI4iztECu0BakcLATkVtCyQjDqsVyF7GBir7BUU1XT/wefZh1V73H9CIbBpNmB0wCTzhsY2e0X7iZgcYW7Q5UR9IeWjucVTKI0x/ucos4/ALXIJSZs/mBCI7STigvwlozbCy3esxp9VvoGNfAKyx21PzTK76a1S+hTQ4Q7xi45VTVuZDw5kZBuRkxCM8c0C8UlWL2hubl4JFOoYYYoc6B7iYImJPkXj+eY5yy/yNfpMklRTGxOqbK+yFCISl2xAQfUmu0DAvkYbZozJdgAu06eRVVksZBlqyKH+TaF/k43eYPZxBSDFgtCzLs1czujeGElBbE8A/938y/wf0K9A4E38IGPhIWddGji6O7/oP2hhjOkd/zNDIcBQCBs1BByftd1Ef/6ZvXjK/Q2FAJzSX8tehO6j8PhfccaSwlD4B6gI/o9dy3F3b+jvD3h7rryp4x6trOfqD0rhH5iF7nNQeG8iv/+EGFxjJkCYNZUw3xAFfOKI5RMVKNC5BoWIivcPkaU4Cu85DMas0+HnWcY1GnN3M6bSXpYyFN6jeX4UEFVENKhSBbKGyP48RHQaFBLihKWAXAxhX0HhvVlmFniv0yB6KQqdh0KyEixi0xFKRtZ7sNdLs0RfSuGcrAS/VUbXD7KHxd62IIYsf8DFpWQlGNiV0fWNVvbpe/uQFgc/UnjP8YwGUQm+htWCcNDexkf8NCi4ZOnNLVF0XcG2RipEzQ3qa7uUQnKqKhe3F0INcUnZMcZfiqDOo9NQKlMEvhYyBRAh+fj2AOPzRink8i9SmAKbFlQmPrIVHqnPm+TYO117UkUkFmgg5Bvartp4AZrokcYtKIGbHwp5Mvhq2VSt0+dVy6YDhB/T2BMmfohQyNW2j1a6gY3ylgdUe0njh4gXBAO+JEVKJTI0qiIuRQ2tokljwJTQ1M91XNEock51FfmOJ8Ao/Xr65iTH3imFfMNBKCk8cFGdrMGt7IH7cPk0GWADJmSQle8/fx5Kat+MAWb/fwYkcTlR2ZXnS5FqUOpT8EnrZQBXDPCZE5VfecjtYiGEeA9A8+1LwgJjJH1FChnsJzR0TkVEEc8AKV8qB9jsh69IITa/9KKFp2oRGlf3P1a0sB61r/QVbI7wOXjNc2qhB6Fu9CK42WTiTxyTu/L7CvGGaxRaoQewylfAe1jPwne6LT5X/3wxOGtLaIUeuHYlF4LQ6NE4NjnZ5BvBaPE3HSGV83W+8zX/aQS39rf/klAzc7bsvAkaY6qANkslMVQJMfPvmhlS3dMJ+EzEPRT6quFLuYqB2GLup+7p5m/Z5kXaQJN+T6+0JN12n+Q2Ock/ItYfnlzNa56HCV0ZtNC+iIXQWhD9QidOk9DPpRBseeObk5yeTGIpe7GF6bv0hdMaUkod8DdM7lK9vCmCZgnz0xQygefOS0ot9xHYJGwqchur6ZdmQbqbB4qMPKvlptXjfwGTa5X3/LxuvX/gw+QSg7g2o732eT0+tafCF/hLFHI7LqfDxYp736IR1dWbycen9sX4hMCRr/AFJbcX5x9dnhQTOM0Zrq/rCTIWX/5y8x+JN0ydz4E4KlBu3Nj4OVYtTDLCn6GVmYY2v8t9Eabu9c4jb814fJ/bNRlJN2ZoRwdM/lSD5oihj5+ge28Ddl5tx1u5gBfbvc8fufJdOMyBkNLy4/TWxmLKts2ViUqZH/ENTIZMngqSgthxkYIu26AMIBn+LndDuvPHhG1Uq4dxJDD8UCuS5M7gcf7EYQjmJqzhd3ujGfaebY9xKBuuXxtLzz2hU0QJ2bDOc0nPR7uj7j66UXiSDtmohVH3o+/fcswsxfbcY7CDi4jTPV5orYAQIg/DIP2n+8fdcPgyHKazJZLA4Zs7iy/WZOp9aReKrExYm04eIdTrUNfFAyTIPzpYw/a+ZOpfCjtFPqL7QexqUgmIAU+WHrQW0piCCT3rOgPOPkHqQcvUR5gvHvyDeMs94qw4yKcaSy9oqZCw2Z/UuG7d1YDcC5qpnzcQuadjfd1c9Spu+P79hmQ1152xdIO+K2jSuWs2De5S0Hqys/XV13JHSJAwZxyFdxEEegs9ptkIRmFfZ5jTz5QXuE1l5VQXssy3AFbxjIqNX2hcPBZS8A/9R4jWX55jyjTF7YK55uGLyDO2mQxgLWYYRTN3RkmbaXqANipe/+JGvsc3YhyHuni3Dscow0mjXFOarff8ZfGxWOUfcXoGoG93rRtMwIJhVhDrvKfLqoWb0xFDS3MifWawG+CbQTO5PPNndh2egpY5cqE9TVit2XMI0JKHyv7Ew3V9ZZvZlTt37etJF2c3DR4T2lhSLKDmPPUOG2SDmW7FOHeNwRv/ebvg4iw8ZbromOwHJBBt/+VrLtYcl6fLPFGWIan28MCHywuZ2kpvK1t6PYdfgbBnTs9YdY/OjQi3lTiS0/JnWB5Qdy7uoZyiOd89BYamEWY/AyjpmpPcz07Wc4qbFMgxw3JvsLLpjzAoKdOwOZi+L/2Onk45MdKBLofxLoZhiKZtbEe7j1g55b8pNpWcZw4p2yzZlMSH0lqcuo1mOJjOls9+0LmFmi7ddrZvi/4kDptZ/2IXG/Ax+bLJ2OYBpxKVL7m2BLjv2BmB8I0zNMY60xmIFVcYZNHYYb8gsLg7ArPO5Qbm4zWaMBxR62PjvgXmcrOeinuY22uUv34i2uJtnyKz1W/aK9Zhj5KDDretBO6UoLGLi0J81GA2AICDn29QMtwdwXcuOQUtnRZ9rMcpTCeqmkY3Is3JgElhgzxiaEdwfErnvdqmELV3koMFFnRSH9C94wiM+VUKnIg4rwbcXaR1zDkmr0Li6MaLEY6JPjrQuVA53jBEFb+hB5sqzsbaNCAqkaBzcV78hJ1RUxtbLcXcOMNmRPY6gLuCMYZTTLhGBEPPj8vMcG7HPsWJDDslEMjJqHv1QhyVRmM7XhgU1Qp0SrLe5jkZZMjKOqNeKafjZOTQhtOBu9K2RJw/tv0MArTgULnM5mgow1sP0rwbMChx/kbk8w5hhaYznhav4VKmSyMn51VKSj1/WwH3zHUgOUl/XmRHtuePiZPnZxTLLrxprArEjATdk58nIUczNLcWTlgyn4C4Kt3wbs/YU5tOX8WwjdH7NGJYcLcVTWcjgyXzCcizKkr8JgWD1EDSjEB9nG0G5G/ZHsxn92pgsGU+SdakGktGUbk34xFCXbMs2e74q9mkGylh2EoRhkrU7Q1XfseWPQuypj7ZarlTmk7QGjP6pwgA8OABtbXbTicIgs6todm2aRpsCZXHm4gl1GkQ0ZjQChyY3/EUvD/WHnpVbMEfhPS5olUDGGrlrZhqs7xqnwphdGZXcF26g8C6PA5fBIIVUMRxqegledOaq4C2LcVUYoMyps82rwBQXFR2RuDQ6AYlpIywo24F02pFKAaz67Eq0JKqumlQkQ4WvwaNwHTer9FjHANXWVpm1TmjguiNlWvHKE/Q6m/1KmUO1Lf9azTnpWHwuuVIGOGkzwz+XlWAEhD2Ak8rn1kFyeusr9F6mAnzcSLy2Ae5AFBMHst3Ll8C5VXVGfLgGekTdfW/gj3PURssbz0xL7spF0Jd9G5Xg2vmBvAg2qmBzpuNd/rxJD1Qd9dLCyiCZvQ6Duwim3K/9exg/Mris/pttJvdnW97ls7qeBGEumR5dtLvNq+uexZHI1o/PiWBoesSISMv/WwASppuBMnT4zr6HyLuG20lnv7tj/zOwd8kisYe6ZSENCNPNE3b1jv+qP93GmMGVvwPwW3XmuEgnk9my/Fi8az66vNiMe6/TObxIGzW2pXnjP0/DnXsfUxXXQwAAAAASUVORK5CYII=",                    
+            "membership":"PRO"
+        },
+        {
+            "name":"Carrefour Express",
+            "address":"de Mayo Avenue B1704 Ramos Mejia",
+            "phone":"0800-444-8484",
+            "url":"https://www.carrefour.com.ar/",
+            "image":"https://carrefourar.vtexassets.com/assets/vtex/assets-builder/carrefourar.theme/61.0.0/logo/logo___8ebc4231614a7b41a4258354ce76e1e1.svg",                    
+            "membership":"FREE"
+        },
+        {
+            "name":"Carrefour Express",
+            "address":"de Mayo Avenue B1704 Ramos Mejia",
+            "phone":"0800-444-8484",
+            "url":"https://www.carrefour.com.ar/",
+            "image":"https://carrefourar.vtexassets.com/assets/vtex/assets-builder/carrefourar.theme/61.0.0/logo/logo___8ebc4231614a7b41a4258354ce76e1e1.svg",                    
+            "membership":"FREE"
+        },
+        {
+            "name":"Carrefour Express",
+            "address":"de Mayo Avenue B1704 Ramos Mejia",
+            "phone":"0800-444-8484",
+            "url":"https://www.carrefour.com.ar/",
+            "image":"https://carrefourar.vtexassets.com/assets/vtex/assets-builder/carrefourar.theme/61.0.0/logo/logo___8ebc4231614a7b41a4258354ce76e1e1.svg",                    
+            "membership":"FREE"
+        },
+        {
+            "name":"Carrefour Express",
+            "address":"de Mayo Avenue B1704 Ramos Mejia",
+            "phone":"0800-444-8484",
+            "url":"https://www.carrefour.com.ar/",
+            "image":"https://carrefourar.vtexassets.com/assets/vtex/assets-builder/carrefourar.theme/61.0.0/logo/logo___8ebc4231614a7b41a4258354ce76e1e1.svg",                    
+            "membership":"FREE"
+        },
+        {
+            "name":"Carrefour Express",
+            "address":"de Mayo Avenue B1704 Ramos Mejia",
+            "phone":"0800-444-8484",
+            "url":"https://www.carrefour.com.ar/",
+            "image":"https://carrefourar.vtexassets.com/assets/vtex/assets-builder/carrefourar.theme/61.0.0/logo/logo___8ebc4231614a7b41a4258354ce76e1e1.svg",                    
+            "membership":"FREE"
+        }
+  
+    ]
+}
