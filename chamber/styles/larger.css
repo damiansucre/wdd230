@@ -61,7 +61,7 @@
         content: none;
     }
 
-    button {
+    #menu {
         display: none;
     }
 
@@ -453,5 +453,94 @@
         text-align: center;
         color: #B4B8AB;
         font-size: 4rem;
+    }
+
+    /*Directory web page*/
+
+    .grid-button {
+        margin: 1rem auto;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0.5rem;
+        background-color: #B4B8AB;
+        text-align: center;
+    }
+
+    .grid-button button {
+        padding: 1rem;
+        font-weight: 700;
+        font-size: 2rem;
+        border: 1px solid white;
+        border-radius: 4px;
+        background-color: #6f7364;
+    }
+
+    section {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+    }
+
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-gap: 5px;
+        align-items: center;
+    }
+
+    .grid section {
+        text-align: center;
+    }
+
+    .grid img {
+        border: 1px solid #fff;
+        box-shadow: 0 0 10px #333;
+    }
+
+    .grid section>* {
+        margin: 0.1rem;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
+
+    .list section>* {
+        margin: 0 1rem;
+    }
+
+    .list section img {
+        display: none;
+        /* smaller viewports only */
+    }
+
+    #members-main section h2 {
+        font-family: "Geologica", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.7rem;
+    }
+
+    #members-main section h3 {
+        font-family: "Geologica", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.3rem;
+        color: #B4B8AB;
+    }
+
+    #members-main section a {
+        font-family: "Geologica", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.3rem;
+        color: #B4B8AB;
+    }
+
+    #members-main section img {
+        background-color: white;
+        height: 75px;
+        max-width: 100%;
     }
 }

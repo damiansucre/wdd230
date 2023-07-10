@@ -443,3 +443,26 @@ form label.top input:required:valid {
     color: #B4B8AB;
     font-size: 2rem;
 }
+
+/*Directory web page*/
+
+.grid-button {
+    margin: 1rem auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #B4B8AB;
+    text-align: center;
+}
+
+.grid-button button {
+    padding: 1rem;
+    font-weight: 700;
+    font-size: 2rem;
+    border: 1px solid rgb(177, 15, 54);
+    border-radius: 4px;
+}
+
+#members-main section h2 {
+    font-family: "Geologica", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem;
+}
