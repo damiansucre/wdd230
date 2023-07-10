@@ -85,7 +85,7 @@ async function getMembers(){
         const response = await fetch(membersURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            //console.log(data);
             displayMembers(data.companies);
         }else{
             throw error(await response.text());
@@ -115,6 +115,7 @@ const displayMembers = (companies)=>{
 		membership.textContent = `Membership: ${companie.membership}`;
         image.setAttribute('src', companie.image);
         image.setAttribute('loading', 'lazy');
+		image.setAttribute('alt', `${companie.name}`);
         //image.setAttribute('width', '340');
         //image.setAttribute('height', '440');
 
