@@ -7,7 +7,7 @@
     <meta name="description" content="La Matanza chamber of Commerce is the main web page to find information about the town">
     <meta name="author" content="Damian Escalante">
     <meta property="og:title" content="La Matanza Chamber of Commerce">
-    <meta property="og:type" content="website"/>
+    <meta property="og:type" content="website">
     <meta property="og:description" content="information about our Chamber of Commerce">
     <meta property="og:image" content="image/Campanopolis.jpg">
     <link rel="favicon" href="chamber/favicon.ico">
@@ -15,6 +15,14 @@
     <link rel="stylesheet" href="styles/larger.css">
 </head>
 <body>
+    <div id="banner">
+        <div class="banner-content">
+            <div class="banner-text">
+                <strong>Reminder: </strong>We invite you to attend our Chamber of Commerce meeting on Wednesday at 7:00 PM.
+            </div>
+            <button class="banner-close" type="button">✖</button>
+        </div>
+    </div>
     <header>
         <img id="header-logo" src="images/Logo.gif" alt="Logo La Matanza">
         <h1>La Matanza Chamber of Commerce</h1>
@@ -40,28 +48,40 @@
             </div>  
         </section>
         <div class="card">
-            <section id="current-events">
-                <h2>Events</h2>
-                <p>Join us for the grand opening in our new park</p>
-            </section>
             <section id="weather">
-                <h2>weather</h2>
-                <p>1°C Partly cloudy Humidity:35% Wind Child:N/A</p>
+                <h2 class="weather-title">Weather in La Matanza Chamber:</h2>
+                <span id="current-temp"></span>
+                <figure>
+                    <figcaption></figcaption>
+                </figure>
+                <h2 class="current-humidity">Humidity:</h2>
+                <h2 class="current-wind">Wind Speed:</h2>
+            </section>
+            <section id="weather-container">
+                <h2 class="weather-days-title">3-Days Weather Forecast:</h2>
+                <div id="icons-container">
+                    <div class="icons">
+                        <p class="weather-days" id="day1"></p>
+                        <p class="weather-days" id="day2"></p>
+                        <div class="image-weather1"></div>
+                        <p class="temp-day1-value"></p>
+                    </div>
+                    <div class="icons">
+                        <p class="weather-days" id="day3"></p>
+                        <div class="image-weather2"></div>
+                        <p class="temp-day2-value"></p>
+                    </div>
+                    <div class="icons">
+                        <p class="weather-days" id="day4"></p>
+                        <div class="image-weather3"></div>
+                        <p class="temp-day3-value"></p>
+                    </div>
+                </div>
             </section>
         </div>
-        <div class="spotlight">
-            <section class="spotlight-1">
-                <h2>Gargano Logistic</h2>
-                <p>"We get it there for you" info@gargano.com +999-9999-9999 website</p>
-            </section>
-            <section class="spotlight-2">
-                <h2>Coder House</h2>
-                <p>"After school coding" info@coderhouse.com +999-9999-9999 website</p>   
-            </section>
-            <section class="spotlight-3">
-                <h2>Green Peace</h2>
-                <p>Over 1000 plans! info@green.com +999-9999-9999 website</p>
-            </section>
+        <div class="spotlight"></div>
+        <div class="slider-nav">
+            <a href="section"></a>
         </div>
     </main>
     <footer>
@@ -69,6 +89,7 @@
         <h2>La Matanza Chamber of Commerce</h2>
         <p>&copy; <span id="current-year"></span> | Angel Damian Escalante | WDD 230 Project | Last Modification: <span id="current-date"></span> </p>
         <script src="scripts/get-information.js"></script>
+        <script src="scripts/grid-table.js"></script>
     </footer>
 </body>
 </html>

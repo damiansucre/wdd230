@@ -6,6 +6,37 @@ body {
     margin: 0 auto;
 }
 
+#banner {
+    background-color: #B4B8AB;
+    display: none;
+}
+
+.banner-content {
+    padding: 16px;
+    max-width: 600px;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+}
+
+.banner-text {
+    flex-grow: 1;
+    line-height: 1.4;
+    font-family: "Be Vietnam Pro", Arial, Helvetica, sans-serif;
+}
+
+.banner-close {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.banner-text,
+.banner-close>span {
+    color: #0d1b2a;
+    font-size: 1.3rem;
+}
+
 header {
     display: grid;
     grid-template-columns: 10% auto auto 10%;
@@ -163,52 +194,129 @@ nav a:hover {
 }
 
 #weather {
-    grid-column: 7/10;
-    background-color: #778da9;
-    color: white;
-    font-family: "Yatra One", Arial, Helvetica, sans-serif;
+    grid-column: 1/6;
+    background-color: #0d1b2a;
+    color: #0d1b2a;
+    font-family: "Geologica", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 22px;
-    padding: 20px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    padding: 1em;
     box-shadow: 5px 5px 10px #6f7364;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
 }
 
-p {
-    font-family: "Be Vietnam Pro", Arial, Helvetica, sans-serif;
+.weather-title {
+    font-size: 1.5rem;
+    font-family: "Geologica", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#current-temp {
+    font-size: 2.5rem;
+    font-family: "Geologica", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.current-humidity {
+    font-family: "Geologica", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+}
+
+.current-wind {
+    font-family: "Geologica", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+}
+
+#weather-days {
+    grid-column: 2/3;
+    background-color: #778da9;
+    color: white;
+    font-family: "Geologica", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 22px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    padding: 1em;
+    box-shadow: 5px 5px 10px #6f7364;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.weather-days-title {
+    font-size: 1.5rem;
+    font-family: "Geologica", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#icons-container {
+    display: flex;
+}
+
+#weather-container {
+    background-color: #0d1b2a;
+    color: #0d1b2a;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 520px;
+    padding: 1em;
+    box-shadow: 5px 5px 10px #6f7364;
+    margin: 1em;
+}
+
+.icons {
+    background-color: #B4B8AB;
+    border-radius: 30px;
+    width: 100%;
+    padding: 1em;
+    box-shadow: 5px 5px 10px #415a77;
+    margin: 1em;
+    font-family: "Geologica", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#day1 {
+    display: none;
 }
 
 .spotlight {
-    display: block;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+    /*border: 1px solid rgba(0, 0, 0, 0.1);*/
+    padding: 1.5rem;
 }
 
-.spotlight-1 {
-    grid-column: 1/5;
-    padding: 20px;
-    background-color: #6f7364;
-    color: white;
-    font-family: "Yatra One", Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    box-shadow: 5px 5px 10px #6f7364;
+.spotlight section img {
+    background-color: white;
+    height: 75px;
+    max-width: 100%;
 }
 
-.spotlight-2 {
-    grid-column: 5/9;
-    padding: 20px;
-    background-color: #415a77;
-    color: white;
-    font-family: "Yatra One", Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    box-shadow: 5px 5px 10px #6f7364;
+.spotlight section img {
+    background-color: white;
+    height: 75px;
+    max-width: 100%;
 }
 
-.spotlight-3 {
-    grid-column: 9/13;
-    padding: 20px;
-    background-color: #6f7364;
-    color: white;
-    font-family: "Yatra One", Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    box-shadow: 5px 5px 10px #6f7364;
+.spotlight section h2 {
+    /*background-color: white;*/
+    /*height: 75px;*/
+    max-width: 100%;
+    font-family: "Geologica", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.spotlight section h3 {
+    font-family: "Geologica", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    color: #B4B8AB;
+}
+
+.spotlight section a {
+    font-family: "Geologica", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    color: #B4B8AB;
 }
 
 footer {

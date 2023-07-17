@@ -74,19 +74,31 @@ radioBtns.forEach(radioBtns =>{
 	radioBtns.addEventListener("change", findSelected);
 });
 
-/*Script for JSON Directory Page*/
+//Weather data
+const currentTemp = document.querySelector('#current-temp');
+//const weatherIcon = document.querySelector('#weather-icon');
+const weatherIcon = document.querySelector('figure');
+const captionDesc = document.querySelector('figcaption');
+const currentHumidity =document.querySelector('.current-humidity');
+const currentWind =document.querySelector('.current-wind');
 
-const cards = document.querySelector('.grid');
-const baseURL = "https://damiansucre.github.io/wdd230/chamber/";
-const membersURL = "https://damiansucre.github.io/wdd230/chamber/data/members.json";
+const currentTempDay1 = document.querySelector('.temp-day1-value');
+const currentTempDay2 = document.querySelector('.temp-day2-value');
+const currentTempDay3 = document.querySelector('.temp-day3-value');
+//const weatherIconDay1 = document.querySelector('#day1-icon');
+const weatherIconDay1 = document.querySelector('.image-weather1');
+const weatherIconDay2 = document.querySelector('.image-weather2');
+const weatherIconDay3 = document.querySelector('.image-weather3');
+const url ='https://api.openweathermap.org/data/2.5/weather?lat=-34.65&lon=-58.55&appid=4473a14fe77c4a9fba6d398101963181&units=imperial';
+const urlDays = 'https://api.openweathermap.org/data/2.5/forecast?lat=-34.65&lon=-58.55&appid=4473a14fe77c4a9fba6d398101963181&units=imperial';
 
-async function getMembers(){
+async function apiFetch(){
     try{
-        const response = await fetch(membersURL);
+        const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
             //console.log(data);
-            displayMembers(data.companies);
+            displayResults(data);
         }else{
             throw error(await response.text());
         }
@@ -96,59 +108,117 @@ async function getMembers(){
     }
 }
 
-const displayMembers = (companies)=>{
-    companies.forEach((companie) => {
-        let card= document.createElement('section');
-        let name = document.createElement('h2');
-		let image = document.createElement('img');
-        let address = document.createElement('h3');
-        let phone = document.createElement('h3');
-		let membership = document.createElement('h3');
-		let url = document.createElement('a');
-       
-
-        name.textContent = `${companie.name}`;
-        address.textContent = `Address: ${companie.address}`;
-        phone.textContent = `Phone: ${companie.phone}`;
-		url.textContent = `${companie.url}`;
-		url.setAttribute('href', companie.url);
-		membership.textContent = `Membership: ${companie.membership}`;
-        image.setAttribute('src', companie.image);
-        image.setAttribute('loading', 'lazy');
-		image.setAttribute('alt', `${companie.name}`);
-        //image.setAttribute('width', '340');
-        //image.setAttribute('height', '440');
-
-        card.appendChild(name);
-		card.appendChild(image);
-        card.appendChild(address);
-        card.appendChild(phone);
-		card.appendChild(url);
-		card.appendChild(membership);
-       
-        cards.appendChild(card);
-    });
+function displayResults(data){
+	let image = document.createElement('img');
+	image.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`);
+	weatherIcon.appendChild(image);
+    currentTemp.innerHTML = `${data.main.temp} &deg;F`;
+    //const iconsrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+    //console.log(iconsrc);
+    //weatherIcon.setAttribute('src', iconsrc);
+    //weatherIcon.setAttribute('src', iconsrc);
+    captionDesc.textContent = `${desc}`;
+	currentHumidity.innerHTML = `Humidity ${data.main.humidity}%`;
+	currentWind.innerHTML = `Wind Speed: ${data.wind.speed}km/h`;
 }
 
-getMembers();
-
-//Let the user toggle between a "grid" type view of member cards or a simple, one-column list of members
-
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
-
-// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
-
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
-});
-
-listbutton.addEventListener("click", showList); // example using defined function
-
-function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+async function apiFetchDaily(){
+    try{
+		const response = await fetch(urlDays);
+		if (response.ok) {
+            const data = await response.json();
+            //console.log(data);
+            displayResultsDaily(data);
+        }else{
+            throw error(await response.text());
+        }
+    }
+    catch (error){
+        //console.log(error);
+    }
 }
+
+function displayResultsDaily(data){
+	let image1 = document.createElement('img');
+	image1.setAttribute('src', `https://openweathermap.org/img/wn/${data.list[1].weather[0].icon}.png`);
+	weatherIconDay1.appendChild(image1);
+	let image2 = document.createElement('img');
+	image2.setAttribute('src', `https://openweathermap.org/img/wn/${data.list[8].weather[0].icon}.png`);
+	weatherIconDay2.appendChild(image2);
+	let image3 = document.createElement('img');
+	image3.setAttribute('src', `https://openweathermap.org/img/wn/${data.list[16].weather[0].icon}.png`);
+	weatherIconDay3.appendChild(image3);
+    currentTempDay1.innerHTML = `${data.list[1].main.temp} &deg;F`;
+	currentTempDay2.innerHTML = `${data.list[8].main.temp} &deg;F`;
+	currentTempDay3.innerHTML = `${data.list[16].main.temp} &deg;F`;
+    //const iconsrcday1 = `https://openweathermap.org/img/wn/${data.list[1].weather[0].icon}.png`;
+	const iconsrcday2 = `https://openweathermap.org/img/wn/${data.list[8].weather[0].icon}.png`;
+	const iconsrcday3 = `https://openweathermap.org/img/wn/${data.list[16].weather[0].icon}.png`;
+    //let desc = data.weather[0].description;
+    //console.log(iconsrcday1);
+    //weatherIconDay1.setAttribute('src', iconsrcday1);
+    weatherIconDay2.setAttribute('src', iconsrcday2);
+	weatherIconDay3.setAttribute('src', iconsrcday3);
+    //captionDesc.textContent = `${desc}`;
+	//currentHumidity.innerHTML = `Humidity: ${data.main.humidity}%`;
+	//currentWind.innerHTML = `Wind Speed: ${data.wind.speed}km/h`;
+}
+
+const d = new Date();
+const weekday = ["Sunday","Monday","Tuesday", "Wednesday","Thursday","Friday","Saturday"];
+
+	function checkDay(day){
+		if(day +d.getDay() >6){
+			return day +d.getDay()-7;
+		}
+		else{
+			return day +d.getDay();
+		}
+	}
+
+for (i=0;i<4;i++){
+	document.getElementById("day"+(i+1)).innerHTML = weekday[checkDay(i)];
+}
+
+apiFetch();
+apiFetchDaily();
+
+//Home page Banner
+
+var date = new Date();
+	day=date.getDay()+1;
+	switch(day){
+		case 1:
+			day='sunday';
+			break;
+		case 2:
+			day='monday';
+			break;
+		case 3:
+			day='tuesday';
+			break;
+		case 4:
+			day= 'wednesday';
+			break;
+		case 5:
+			day= 'thursday';
+			break;
+		case 6:
+			day= 'friday';
+			break;
+		case 7:
+			day= 'saturday';
+			break;
+	}
+//console.log(day);
+
+	if (day=="monday" || day=="tuesday" || day=="wednesday") {
+		document.getElementById("banner").style.display="block";
+	} else {
+		document.getElementById("banner").style.display="none";
+	}
+
+document.querySelector(".banner-close").addEventListener("click", function (){
+	this.closest("#banner").style.display ="none";
+})
