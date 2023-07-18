@@ -37,7 +37,7 @@ modeButton.addEventListener("click", () => {
 	}
 });
 
-/* const visitsDisplay = document.querySelector(".visits");
+const visitsDisplay = document.querySelector(".visits");
 
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 if (numVisits !== 0) {
@@ -46,7 +46,7 @@ if (numVisits !== 0) {
 	visitsDisplay.textContent = `This is your first visit. 🥳 Welcome!`;
 }
 numVisits++;
-localStorage.setItem("numVisits-ls", numVisits); */
+localStorage.setItem("numVisits-ls", numVisits);
 
 
 /*Week 04 Team Activity*/
@@ -58,7 +58,7 @@ const message = document.querySelector("#formmessage");
 kp2.addEventListener("focusout", checkSame); */
 
 // This should be refactored.
-function checkSame() {
+/* function checkSame() {
 	if (kp1.value !== kp2.value) {
 		message.textContent = "❗Password is not the same!";
 		message.style.visibility = "show";
@@ -70,7 +70,7 @@ function checkSame() {
 		kp2.style.backgroundColor = "#fff";
 		kp2.style.color = "#000";
 	}
-}
+} */
 
 
 const rangevalue = document.getElementById("rangevalue");

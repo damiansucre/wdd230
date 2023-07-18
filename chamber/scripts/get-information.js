@@ -35,20 +35,19 @@ if (theDateToday.getMonth() == 11 && theDateToday.getDate() > 25) {
 
 /* const visitsDisplay = document.querySelector(".visits");
 
-const theDateToday = new Date();
-
-
+const msToDays = 84600000;
+const today = Date.now();
+console.log(today)
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 if (numVisits !== 0) {
-	visitsDisplay.textContent = numVisits;
-	const lastVisited = localStorage.getItem('dayVisited');
-	let daysLast = 
+	visitsDisplay.textContent = `Back so soon! Awesome!`;
+	//const lastVisited = localStorage.getItem('dayVisited');
 } else {
 	visitsDisplay.textContent = `Welcome! Let us know if you have any questions.`;
 }
 numVisits++;
-localStorage.setItem("numVisits-ls", numVisits);
-localStorage.setItem('dayVisited', theDateToday); */
+localStorage.setItem("numVisits-ls", numVisits); */
+//localStorage.setItem('dayVisited', theDateToday);
 
 
 /*script for form*/
